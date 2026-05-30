@@ -22,9 +22,9 @@
 <!-- geometries -->
 
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="10" rounded_top_right="10">
-  <distance name="left_width" value="1"/>
-  <distance name="right_width" value="1"/>
-  <distance name="bottom_height" value="1"/>
+  <distance name="left_width" value="2"/>
+  <distance name="right_width" value="2"/>
+  <distance name="bottom_height" value="2"/>
   <distance name="left_titlebar_edge" value="6"/>
   <distance name="right_titlebar_edge" value="6"/>
   <distance name="title_vertical_pad" value="10"/>
@@ -119,10 +119,12 @@
 
 <draw_ops name="titlebar_focused">
   <include name="entire_background_focused"/>
+  <line color="C_border_focused" x1="0" y1="height-1" x2="width-1" y2="height-1" />
 </draw_ops>
 
 <draw_ops name="titlebar_unfocused">
   <include name="entire_background_unfocused"/>
+  <line color="C_border_unfocused" x1="0" y1="height-1" x2="width-1" y2="height-1" />
 </draw_ops>
 
 <draw_ops name="rounded_border_focused">

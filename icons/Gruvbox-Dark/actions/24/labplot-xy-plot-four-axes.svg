@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
- <defs>
-  <style id="current-color-scheme" type="text/css">
-   .ColorScheme-Text { color:#d4be98; } .ColorScheme-Highlight { color:#5294e2; }
-  </style>
- </defs>
- <path style="fill:currentColor" class="ColorScheme-Text" d="M 0 0 L 0 16 L 16 16 L 16 0 L 1 0 L 0 0 z M 1 1 L 13.71875 1 L 13.25 1.46875 L 12.4375 2.28125 L 11.125 3.59375 L 9 1.46875 L 7.46875 3 L 7 3.46875 L 6.15625 4.28125 L 4.46875 6 L 1 6 L 1 1 z M 15 1.125 L 15 14.84375 L 14.71875 14.5625 L 13.96875 13.8125 L 13.125 13 L 11.84375 11.6875 L 11.125 11 L 9 13.09375 L 7.6875 11.8125 L 6.875 11 L 4.875 9 L 1 9 L 1 7 L 4.875 7 L 6.875 5 L 7.6875 4.15625 L 9 2.875 L 11.125 5 L 13.125 3 L 13.96875 2.15625 L 15 1.125 z M 1 10 L 4.46875 10 L 6.15625 11.6875 L 7 12.53125 L 7.46875 13 L 9 14.53125 L 9.53125 14 L 11.125 12.40625 L 12.4375 13.6875 L 12.9375 14.21875 L 13.25 14.53125 L 13.28125 14.5625 L 13.71875 15 L 1 15 L 1 10 z" transform="translate(4 4)"/>
+<svg width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#ebdbb2; } .ColorScheme-Highlight { color:#458588; }</style>
+  </defs>
+  <path class="ColorScheme-Text" d="m5 5v14h14v-14zm1 0.9998h10.88l-2.144 2.145-1.859-1.859-3.965 3.965h-2.91zm12 0.4614v11.02l-3.264-3.236-1.859 1.832-3.609-3.582h-3.266v-0.9954h3.266l3.609-3.609 1.859 1.859 3.264-3.291zm-12 7.289h2.91l3.965 3.965 1.859-1.859c0.7388 0.6934 1.43 1.433 2.152 2.142h-10.89z" fill="currentColor"/>
 </svg>

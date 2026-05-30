@@ -1146,11 +1146,14 @@ dropdown {
 	}
 
 	popover.menu {
-		padding: $space-size 0 0;
+		padding: $space-size;
+		border: 1px solid $border;
+		box-shadow: $shadow-z4;
 
 		listview > row {
 			min-width: 0;
 			padding: $space-size;
+			border-radius: $menuitem-radius;
 
 			&:selected {
 				color: $text;
@@ -1313,16 +1316,22 @@ searchbar > revealer > box {
 %titlebar-button {
 	@extend %button-flat;
 	color: $titlebar-text-secondary;
-
-	.linked:not(.vertical) > & {
-		border-radius: $corner-radius;
-	}
+	border-radius: $corner-radius;
+	min-width: 28px;
+	min-height: 28px;
+	padding: 2px 6px;
+	margin: 2px 1px;
 
 	&:focus,
-	&:hover,
+	&:hover {
+		color: $titlebar-text;
+		background-color: $titlebar-fill;
+	}
+
 	&:active,
 	&:checked {
 		color: $titlebar-text;
+		background-color: $titlebar-fill;
 	}
 
 	&:disabled {
@@ -1387,11 +1396,7 @@ searchbar > revealer > box {
 	background-color: $titlebar;
 	color: $titlebar-text;
 	border-radius: $window-radius $window-radius 0 0;
-	/* box-shadow: inset 0 1px highlight($titlebar); */
-
-	/* @if $outline == 'false' { */
-	/* 	box-shadow: inset 0 1px highlight($titlebar); */
-	/* } */
+	box-shadow: inset 0 1px highlight($titlebar), inset 0 -1px $border;
 
 	&:disabled {
 		color: $titlebar-text-disabled;
@@ -2042,10 +2047,11 @@ menu {
 	background-color: $menu;
 	background-clip: border-box;
 	border-radius: $menu-radius;
+	border: 1px solid $border;
 
 	.csd & {
-		border: none;
-		box-shadow: inset 0 0 0 1px highlight($surface);
+		border: 1px solid $border;
+		box-shadow: $shadow-z4, inset 0 0 0 1px highlight($surface);
 	}
 
 	@if $outline == 'true' {
